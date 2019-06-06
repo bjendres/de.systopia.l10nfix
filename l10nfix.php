@@ -25,8 +25,8 @@ function l10nfix_civicrm_config(&$config) {
   _l10nfix_civix_civicrm_config($config);
 
   // enable injection
-//  require_once 'CRM/L10nfix/Fixer.php';
-//  \Civi::dispatcher()->addSubscriber(new CRM_L10nmo_Injector());
+  require_once 'CRM/L10nfix/Fixer.php';
+  \Civi::dispatcher()->addSubscriber(new CRM_L10nfix_Fixer());
 }
 
 /**
